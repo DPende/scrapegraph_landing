@@ -12,7 +12,7 @@ const Hero = () => {
             <div className='absolute -z-1'>
                 <Particle />
             </div>
-            <div className=" px-4 sm:px-6">
+            <div className="px-4 md:pb-40 sm:px-6">
 
                 {/* Hero content */}
                 <div className="pt-32 pb-12 md:pt-40 md:pb-20">
