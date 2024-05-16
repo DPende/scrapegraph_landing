@@ -1,4 +1,3 @@
-import Particle from "./ParticleBg";
 import scrapeGraphgLogo from '../assets/scrapegraphai_logo.png'
 import YoutubeEmbed from "./YouTubeEmbed";
 
@@ -8,10 +7,7 @@ const Hero = () => {
 
     return (
         <section className="relative">
-            {/* Illustration behind hero content */}
-            <div className='absolute -z-1'>
-                <Particle />
-            </div>
+
             <div className="px-4 md:pb-40 sm:px-6">
 
                 {/* Hero content */}
