@@ -1,4 +1,4 @@
-import scrapeGraphgLogo from '../assets/scrapegraphai_logo.png'
+import scrapeGraphgLogo from "../assets/scrapegraphai_logo.png"
 import YoutubeEmbed from "./YouTubeEmbed";
 
 

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const YoutubeEmbed = ({ embedId }) => (
     <div className="video-responsive flex justify-center">
         <iframe
-            width="700"
+            width="650"
             height="393"
             src={`https://www.youtube.com/embed/${embedId}`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

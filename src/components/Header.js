@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 
-import Logo from './Logo'
+import Logo from "./Logo"
 
 export default function Header() {
 
@@ -13,12 +13,12 @@ export default function Header() {
 
     useEffect(() => {
         scrollHandler()
-        window.addEventListener('scroll', scrollHandler)
-        return () => window.removeEventListener('scroll', scrollHandler)
+        window.addEventListener("scroll", scrollHandler)
+        return () => window.removeEventListener("scroll", scrollHandler)
     }, [top])
 
     return (
-        <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top ? 'bg-darker-800 backdrop-blur-sm shadow-lg' : ''}`}>
+        <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top ? "bg-darker-800 backdrop-blur-sm shadow-lg" : ""}`}>
             <div className="max-w-6xl mx-auto px-5 sm:px-6">
                 <div className="flex items-center justify-between h-16 md:h-20">
 
@@ -64,7 +64,7 @@ export default function Header() {
                             <li className="ml-4">
                                 <a href="https://www.youtube.com/@ScrapeGraphAI" className="flex justify-center items-center text-gray-200 hover:text-pink bg-darker-700 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="YouTube">
                                     <svg className="w-8 h-8  fill-current" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 32 32">
-                                        <path fill-rule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clip-rule="evenodd" />
+                                        <path fillRule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clipRule="evenodd" />
                                     </svg>
                                 </a>
                             </li>
