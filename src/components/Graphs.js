@@ -9,19 +9,19 @@ const items = [
     {
         icon: SmartScraperGraphIcon,
         title: "SmartScraperGraph",
-        description: "Scrapegraph-ai also includes a one-page scraper, perfect for obtaining information from individual web pages or local files. This tool streamlines the process, allowing you to extract data quickly and efficiently from specific sources.",
+        description: "ScrapeGraphAI also includes a one-page scraper, perfect for obtaining information from individual web pages or local files. This tool streamlines the process, allowing you to extract data quickly and efficiently from specific sources.",
         link: "https://scrapegraph-ai.readthedocs.io/en/latest/scrapers/graphs.html#smartscrapergraph"
     },
     {
         icon: SearchGraphIcon,
         title: "SearchGraph",
-        description: "Scrapegraph-ai features a multi-page scraper, enabling you to gather all the information you need from multiple web pages seamlessly. This powerful tool ensures comprehensive data collection, saving you time and effort in extracting extensive datasets.",
+        description: "ScrapeGraphAI features a multi-page scraper, enabling you to gather all the information you need from multiple web pages seamlessly. This powerful tool ensures comprehensive data collection, saving you time and effort in extracting extensive datasets.",
         link: "https://scrapegraph-ai.readthedocs.io/en/latest/scrapers/graphs.html#searchgraph"
     },
     {
         icon: SpeechGraphIcon,
         title: "SpeechGraph",
-        description: "Scrapegraph-ai can scrape information and convert it into voice audio. This unique feature allows providing an accessible and convenient way to interact with the extracted data.",
+        description: "ScrapeGraphAI can scrape information and convert it into voice audio. This unique feature allows providing an accessible and convenient way to interact with the extracted data.",
         link: "https://scrapegraph-ai.readthedocs.io/en/latest/scrapers/graphs.html#speechgraph"
     },
     {
