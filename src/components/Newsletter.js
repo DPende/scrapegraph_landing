@@ -25,7 +25,7 @@ const Newsletter = () => {
     };
 
     return (
-        <section className="bg-white pt-16">
+        <section className="bg-light pt-16">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="pb-12 md:pb-20">
 
