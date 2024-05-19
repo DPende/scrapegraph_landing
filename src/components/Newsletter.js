@@ -8,6 +8,7 @@ const Newsletter = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        console.log(process.env.REACT_APP_PUBLIC_KEY)
         console.log(form.current)
 
         emailjs
@@ -19,7 +20,7 @@ const Newsletter = () => {
                     console.log('SUCCESS!');
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    console.log('FAILED...', error);
                 },
             );
     };
