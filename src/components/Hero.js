@@ -30,7 +30,7 @@ const Hero = () => {
                             </h1>
                             <div className="max-w-3xl mx-auto">
                                 <p className="text-purple-200 text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
-                                    Meet the new library for making scraping that will change the way you scrape
+                                   Scrape smarter, not harder
                                 </p>
                             </div>
 
