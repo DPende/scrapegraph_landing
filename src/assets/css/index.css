@@ -12,11 +12,6 @@ body {
   @apply bg-darker;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 /* Buttons */
 .btn,
 .btn-sm {

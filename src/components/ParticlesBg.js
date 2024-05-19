@@ -23,7 +23,6 @@ const Particle = () => {
                         enable: true,
                         mode: "repulse",
                     },
-                    resize: true,
                 },
                 modes: {
                     repulse: {
@@ -59,7 +58,6 @@ const Particle = () => {
                 number: {
                     density: {
                         enable: true,
-                        area: 700,
                     },
                     value: 150,
                 },
