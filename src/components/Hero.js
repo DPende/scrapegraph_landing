@@ -26,12 +26,11 @@ const Hero = () => {
                                 ScrapeGraphAI
                             </h1>
                             <h1 className="text-purple-200 text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
-                                The revolution of scraping
+                               You Only Scrape Once
                             </h1>
                             <div className="max-w-3xl mx-auto">
                                 <p className="text-purple-200 text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
-                                   Scrape smarter, not harder
-                                </p>
+                                Automated LLM + Graph Pipelines for data-extraction and semantic understanding.                                </p>
                             </div>
 
                             {/* Buttons */}
