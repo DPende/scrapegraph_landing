@@ -1,23 +1,51 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
+const SignUpSuccessMessage = () => {
+    console.log("ciao")
+    return (
+        <div className="flex items-center p-4 mb-4 mt-4 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800" role="alert">
+            <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+            </svg>
+            <span className="sr-only">Info</span>
+            <div>
+                Welcome to our newsletter community!
+            </div>
+        </div>
+    )
+}
+
+const SignUpErrorMessage = () => {
+    return (
+        <div className="flex items-center p-4 mb-4 mt-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
+            <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+            </svg>
+            <div>
+                <span className="font-medium">Error!</span> There is an error in the sign-in process, please try again later.
+            </div>
+        </div>
+    )
+}
 
 const Newsletter = () => {
     const form = useRef();
+    const [signUpSuccess, setSignUpSuccess] = useState(false);
+    const [signUpError, setSignUpError] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs
             .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
                 publicKey: process.env.REACT_APP_PUBLIC_KEY,
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    setSignUpSuccess(true);
                 },
                 (error) => {
-                    console.log('FAILED...', error);
+                    setSignUpError(true);
                 },
             );
     };
@@ -70,14 +98,13 @@ const Newsletter = () => {
                                         <input type="submit" className="btn text-white bg-blue-500 hover:bg-blue-200 shadow" value="Stay tuned" />
                                     </div>
                                     {/* Success message */}
+                                    {signUpSuccess && <SignUpSuccessMessage />}
+                                    {signUpError && <SignUpErrorMessage />}
                                     <p className="text-sm text-gray-400 mt-3">No spam. You can unsubscribe at any time.</p>
                                 </form>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </section>
